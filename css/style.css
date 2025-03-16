@@ -1,0 +1,136 @@
+/* === ESTRUCTURA PRINCIPAL === */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+}
+
+.container-fluid {
+    flex: 1; 
+
+}
+
+.row.content {
+    flex-grow: 1;
+    min-height: calc(100vh - 150px);
+    display: flex; 
+}
+
+.row > * {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+/* === LATERALES (SIDENAV) === */
+.sidenav {
+    padding-top: 20px;
+    background-color: #82bd9b;
+    height: auto;
+    min-height: inherit;
+    flex-grow: 1;
+}
+
+/* === TEXTO Y SECCIONES === */
+.seccion {
+    padding: 20px;
+    margin: 0; 
+    border-radius: 0;
+    width: 100%;
+  }
+  
+  .seccion-1 {
+    background-color: #e6f7f6;
+    padding-bottom: 60px;
+  }
+  
+  .seccion-2 {
+    background-color: #eaf7e6;
+    padding-bottom: 40px;
+  }
+  
+  .seccion-3 {
+    background-color: #f7f3e6;
+    padding-bottom: 100px;
+  }
+
+  .seccion-4 {
+    background-color: #e6f7f6;
+    padding-bottom: 100px;
+  }
+
+p {
+    color:rgb(99, 66, 24);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 150px;
+    padding-right: 80px;
+    font-size: 1.2rem;
+    text-justify: center;
+    text-align: left;
+}
+
+h1 {
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 30px;
+    color: rgb(114, 69, 1);
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 60px;
+    color:rgb(62, 75, 52);
+    font-size: 2.5rem;
+}
+
+iframe {
+    padding: 50px;
+}
+
+.tuit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* === FOOTER === */
+.footer {
+    display: flex;
+    justify-content: center; 
+    background-color: #212529;
+    padding: 15px;
+    margin-top: auto; 
+}
+
+/* === NAVBAR === */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.nav-link {
+    color: #82bd9b;
+}
+
+.nav-link:active {
+    color: green;
+}
+
+/* === RESPONSIVE (Pantallas pequeñas) === */
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+
+    .row.content {
+        height: auto;
+    }
+}
